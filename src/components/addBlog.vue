@@ -62,7 +62,7 @@ export default {
     },
     methods: {
       post:function(){
-        this.$http.post('https://timepass-7e081.firebaseio.com/posts.json', this.blog).then(function(data){
+        this.$http.post(/*<-Your firebase link->*/, this.blog).then(function(data){
           console.log(data);
           this.submitted=true;
         });
